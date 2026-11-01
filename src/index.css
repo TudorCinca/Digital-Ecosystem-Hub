@@ -1,5 +1,30 @@
-cat << 'EOF' > src/index.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-EOF
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply font-sans;
+  }
+}
+
+/* Subtle custom scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(2 6 23);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(30 41 59);
+  border-radius: 8px;
+  border: 2px solid rgb(2 6 23);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(51 65 85);
+}

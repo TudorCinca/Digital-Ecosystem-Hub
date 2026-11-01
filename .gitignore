@@ -1,0 +1,34 @@
+# Dipendenze
+/node_modules
+/.pnp
+.pnp.js
+
+# Build / Output di Vite e bundler
+/dist
+/dist-ssr
+*.local
+
+# File di log di npm e Vite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.vite
+
+# Variabili d'ambiente e chiavi segrete
+.env
+.env.*
+!.env.example
+
+# Editor e IDE (VS Code, Nano, ecc.)
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# File temporanei o di build locali
+*.tsbuildinfo
+.eslintcache
